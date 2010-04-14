@@ -5,7 +5,7 @@
 
 if ['solo', 'app', 'app_master'].include?(node[:instance_role])
 
-  run_for_app(node[:environment][:name]) do |app_name, data|
+  run_for_app("memberhub") do |app_name, data|
 
     worker_name = "delayed_job"
 
